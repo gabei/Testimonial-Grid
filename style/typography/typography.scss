@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
+
+body {
+  font-family: "Barlow Semi Condensed", serif;
+}
+
+// following specific font sizes are per design spec
+// 1rem = 16px
+@mixin text-preset-1() {
+  font-size: 1.25rem; // 20px
+  line-height: 1.2;
+}
+
+@mixin text-preset-2() {
+  font-size: 0.8125rem; // 13px
+  line-height: 1.1;
+}
+
+@mixin text-preset-3() {
+  font-size: 0.8125rem; // 13px
+  line-height: 1.4;
+
+}
+  
+@mixin text-preset-4() {
+  font-size: 0.6875rem; // 11px
+  line-height: 1.1;
+
+}
