@@ -13,10 +13,30 @@
   }
 
   padding: 2rem;
+  display: grid;
   grid-template-areas: "avatar header header header
   highlight highlight highlight highlight
   quote quote quote quote
   quote quote quote quote";
+
+  &__avatar {
+    grid-area: avatar;
+  }
+  &__name {
+    grid-area: header;
+  }
+
+  &__role {
+    grid-area: header;
+  }
+
+  &__highlight {
+    grid-area: highlight;
+  }
+
+  &__quote {
+    grid-area: quote;
+  }
 }
 
 
