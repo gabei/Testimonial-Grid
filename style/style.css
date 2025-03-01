@@ -1,19 +1,92 @@
-/* Error: The default namespace "" is not a valid Sass identifier.
- * 
- * Recommendation: add an "as" clause to define an explicit namespace.
- *   ,
- * 1 | @use './reset/';
- *   | ^^^^^^^^^^^^^^^
- *   '
- *   style\index.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: The default namespace \"\" is not a valid Sass identifier.\a\aRecommendation: add an \"as\" clause to define an explicit namespace.\a   \2577 \a 1 \2502  @use './reset/';\d\a   \2502  ^^^^^^^^^^^^^^^\a   \2575 \a   style\\index.scss 1:1  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap");
+/* 
+CSS reset derived from Josh Comeau's defaults
+found here : https://www.joshwcomeau.com/css/custom-css-reset/ 
+*/
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", serif;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  display: grid;
+  grid-template-areas: "avatar header header header" "highlight highlight highlight highlight" "quote quote quote quote" "quote quote quote quote";
+}
+.testimonial__avatar {
+  grid-area: avatar;
+}
+.testimonial__name {
+  grid-area: header;
+}
+.testimonial__role {
+  grid-area: header;
+}
+.testimonial__highlight {
+  grid-area: highlight;
+}
+.testimonial__quote {
+  grid-area: quote;
+}
+
+.purple {
+  background-color: #733FC8;
+}
+
+.grey {
+  background-color: #48556A;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.dark-blue {
+  background-color: #19202D;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */

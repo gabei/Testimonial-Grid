@@ -1,23 +1,22 @@
-@use './reset/' as *;
-@use './color/' as color;
-@use './responsive/' as adjust;
-@use './size/' as size;
-@use './typography/' as type;
+@use './reset/reset' as *;
+@use './color/color' as color;
+@use './responsive/responsive' as adjust;
+@use './size/size' as size;
+@use './typography/typography' as type;
 
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
 
 .testimonial {
-  &-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-  }
-
   padding: 2rem;
   display: grid;
-  grid-template-areas: "avatar header header header
-  highlight highlight highlight highlight
-  quote quote quote quote
-  quote quote quote quote";
+  grid-template-areas: "avatar header header header"
+  "highlight highlight highlight highlight"
+  "quote quote quote quote"
+  "quote quote quote quote";
 
   &__avatar {
     grid-area: avatar;
