@@ -1,8 +1,8 @@
-@use './reset/';
-@use './color/';
-@use './responsive/';
-@use './size/';
-@use './typography/';
+@use './reset/' as *;
+@use './color/' as color;
+@use './responsive/' as adjust;
+@use './size/' as size;
+@use './typography/' as type;
 
 
 .testimonial {
