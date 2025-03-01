@@ -5,7 +5,19 @@
 @use './typography/';
 
 
+.testimonial {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 
+  padding: 2rem;
+  grid-template-areas: "avatar header header header
+  highlight highlight highlight highlight
+  quote quote quote quote
+  quote quote quote quote";
+}
 
 
 
