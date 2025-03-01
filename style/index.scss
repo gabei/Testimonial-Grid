@@ -4,6 +4,11 @@
 @use './size/size' as size;
 @use './typography/typography' as type;
 
+body {
+  background-color: color.$grey-100;
+  padding: 2rem;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -12,21 +17,28 @@
 
 .testimonial {
   padding: 2rem;
+  border-radius: size.$space-100;
   display: grid;
-  grid-template-areas: "avatar header header header"
+  grid-template-areas: 
+  "avatar name name name"
+  "avatar role role role"
   "highlight highlight highlight highlight"
   "quote quote quote quote"
   "quote quote quote quote";
+  color: color.$white;
 
   &__avatar {
     grid-area: avatar;
   }
+
   &__name {
-    grid-area: header;
+    grid-area: name;
+    @include type.text-preset-2;
   }
 
   &__role {
-    grid-area: header;
+    grid-area: role;
+    @include type.text-preset-4;
   }
 
   &__highlight {

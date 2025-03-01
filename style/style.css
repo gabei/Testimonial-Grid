@@ -38,6 +38,11 @@ body {
   font-family: "Barlow Semi Condensed", serif;
 }
 
+body {
+  background-color: #E7EAEE;
+  padding: 2rem;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -46,17 +51,18 @@ body {
 
 .testimonial {
   padding: 2rem;
+  border-radius: 0.5rem;
   display: grid;
-  grid-template-areas: "avatar header header header" "highlight highlight highlight highlight" "quote quote quote quote" "quote quote quote quote";
+  grid-template-areas: "avatar name name name" "avatar role role role" "highlight highlight highlight highlight" "quote quote quote quote" "quote quote quote quote";
 }
 .testimonial__avatar {
   grid-area: avatar;
 }
 .testimonial__name {
-  grid-area: header;
+  grid-area: name;
 }
 .testimonial__role {
-  grid-area: header;
+  grid-area: role;
 }
 .testimonial__highlight {
   grid-area: highlight;
