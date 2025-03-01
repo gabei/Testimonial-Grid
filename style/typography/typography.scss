@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
 
+$semibold: 600;
+$medium: 500;
+
+
 body {
   font-family: "Barlow Semi Condensed", serif;
+  font-weight: $medium;
 }
 
 // following specific font sizes are per design spec
 // 1rem = 16px
 @mixin text-preset-1() {
   font-size: 1.25rem; // 20px
+  font-weight: $semibold;
   line-height: 1.2;
 }
 

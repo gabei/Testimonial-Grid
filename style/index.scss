@@ -19,9 +19,10 @@ body {
   padding: 2rem;
   border-radius: size.$space-100;
   display: grid;
+  gap: 1rem;
+  align-items: center;
   grid-template-areas: 
   "avatar name name name"
-  "avatar role role role"
   "highlight highlight highlight highlight"
   "quote quote quote quote"
   "quote quote quote quote";
@@ -30,6 +31,8 @@ body {
 
   &__avatar {
     grid-area: avatar;
+    border: 1px solid color.$purple-300;
+    border-radius: 50%;
   }
 
   &__name {
@@ -38,7 +41,7 @@ body {
   }
 
   &__role {
-    grid-area: role;
+    display: block;
     @include type.text-preset-4;
   }
 
@@ -57,14 +60,24 @@ body {
 
 .purple {
   background-color: color.$purple-500;
+
+  & .testimonial__role {
+    color: color.$purple-50;
+  }
 }
 
 .grey {
   background-color: color.$grey-500;
+  color: color.$grey-200;
 }
 
 .white {
   background-color: color.$white;
+  color: color.$grey-500;
+
+  & .testimonial__role {
+    color: color.$grey-200;
+  }
 }
 
 .dark-blue {
