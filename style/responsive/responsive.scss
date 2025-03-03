@@ -1,5 +1,19 @@
 // max-widths
 $mobile--small: 360px;
-$mobile: 680px;
+$mobile: 640px;
 $tablet: 1024px;
 $desktop: 1280px;
+
+
+
+@mixin tablet() {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin desktop(){
+  @media screen and (min-width: $tablet){
+    @content;
+  }
+}
