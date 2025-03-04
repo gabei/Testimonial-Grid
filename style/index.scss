@@ -36,7 +36,7 @@ body {
   gap: 1rem;
   align-items: center;
   grid-template-areas: 
-  "avatar name name name"
+  "header header header header"
   "highlight highlight highlight highlight"
   "quote quote quote quote"
   "quote quote quote quote";
@@ -45,15 +45,21 @@ body {
 
  
 
-  &__avatar {
-    grid-area: avatar;
-    border: 1px solid color.$purple-300;
-    border-radius: 50%;
-  }
+  &__header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    & img {
+      border: 1px solid color.$purple-300;
+      border-radius: 50%;
+    }
 
-  &__name {
-    grid-area: name;
-    @include type.text-preset-2;
+    & p {
+      grid-area: name;
+      @include type.text-preset-2;
+    }
   }
 
   &__role {
