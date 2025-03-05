@@ -10,11 +10,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./images/site-snapshot.png" alt="Site preview">
+<img src="./images/snapshot.png" alt="Site preview">
 
 ### Links
 
-- <a href="https://github.com/gabei/Product-Preview__FEM">View code here.</a>
-- <a href="https://gabei.github.io/Product-Preview__FEM/" target="_blank">View live site on GitHub Pages</a>
+- <a href="https://github.com/gabei/Testimonial-Grid">View code here.</a>
+- <a href="https://gabei.github.io/Testimonial-Grid/" target="_blank">View live site on GitHub Pages</a>
 
 ## My process
 
@@ -41,19 +38,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-
-### What I learned
-
-
-### Continued development
-
-
 ### Useful resources
-
+- Learn CSS Grid with <a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a>
 
 ## Author
 
 - Frontend Mentor - <a href="https://www.frontendmentor.io/profile/gabei" target="_blank">@gabei</a>
 - Github - <a href="(https://www.github.com/gabei" target="_blank">@gabei</a>
 
-## Acknowledgments
