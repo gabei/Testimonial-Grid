@@ -6,7 +6,7 @@
 
 body {
   background-color: color.$grey-100;
-  padding: 2rem;
+  padding: 1rem;
 
   @include adjust.tablet {
     padding: 4rem;
